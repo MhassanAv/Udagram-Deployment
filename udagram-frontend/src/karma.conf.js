@@ -25,7 +25,7 @@ module.exports = function (config) {
     colors: true,
     logLevel: config.LOG_INFO,
     autoWatch: false,
-    browsers: [],
+    browsers: [--no-browsers],
     singleRun: true
   });
 };
