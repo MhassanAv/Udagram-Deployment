@@ -26,6 +26,7 @@ module.exports = function (config) {
     logLevel: config.LOG_INFO,
     autoWatch: false,
     browsers: [],
+    browserNoActivityTimeout:250,
     singleRun: true
   });
 };
