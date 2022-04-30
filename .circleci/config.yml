@@ -35,4 +35,4 @@ jobs:
       - run:
           name: Deploy Backend
           command: |
-            npm run backend:deploy 
+            pip install awsebcli --upgrade --user && npm run backend:deploy 
