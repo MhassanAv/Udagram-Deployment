@@ -27,6 +27,11 @@ jobs:
           name: Back-End Build
           command: |
             npm run backend:build
+      - run:  
+           name: Testing
+           command: |
+            npm run backend:test && nvm use 16.15.0 && npm run frontend:test
+            
       - run:
           name: Deploy App
           command: |
