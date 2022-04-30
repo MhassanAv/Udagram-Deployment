@@ -63,5 +63,6 @@ The e2e tests are using Protractor and Jasmine.
 
 ## Urls
 
-Frontend:`http://udacity-project-udagram.s3.amazonaws.com/`
+Frontend:`http://udacity-udagram-frontend.s3-website.us-east-2.amazonaws.com/`
 Backend:`http://udagram-backend-dev.eba-pdbs4k3r.us-east-2.elasticbeanstalk.com/`
+Database:`database-1.cfzgaby01nq4.us-east-2.rds.amazonaws.com`
