@@ -8,7 +8,7 @@ jobs:
   build:
     docker:
       - image: "cimg/node:16.15.0"
-    steps:
+    steps: #installing node,aws cli and eb cli
       - node/install
       - checkout
       - aws-cli/setup
@@ -23,7 +23,7 @@ jobs:
             npm run backend:install
       - run:
           name: Front-End Build
-          command: |
+          command: | # using version 16.15.0 for compatibility
             nvm use 16.15.0 && npm run frontend:build 
       - run:
           name: Back-End Build
@@ -35,7 +35,7 @@ jobs:
             npm run frontend:deploy
       - run:
           name: Deploy App API
-          command: |
+          command: | # deploying the backednd and setting env
             cd udagram-api
             eb deploy udagram-backend-dev 
             eb setenv AWS_ACCESS_KEY_ID=$AWS_ACCESS_KEY_ID
